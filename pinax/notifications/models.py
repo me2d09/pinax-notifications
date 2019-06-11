@@ -28,7 +28,7 @@ class NoticeType(models.Model):
 
     label = models.CharField(_("label"), max_length=40)
     display = models.CharField(_("display"), max_length=50)
-    description = models.CharField(_("description"), max_length=100)
+    description = models.CharField(_("description"), max_length=500)
 
     # by default only on for media with sensitivity less than or equal to this number
     default = models.IntegerField(_("default"))
