@@ -153,7 +153,7 @@ def send_now(users, label, extra_context=None, sender=None, scoping=None):
 
     current_language = get_language()
 
-    for user in users:
+    for user in filter(None, users):
         # get user language for user from language store defined in
         # NOTIFICATION_LANGUAGE_MODULE setting
         try:
